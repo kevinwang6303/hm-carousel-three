@@ -1,0 +1,66 @@
+.hm-carousel-display-npwrap {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  flex-direction: row !important;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel ul.indicators {
+  list-style: none;
+  bottom: 1rem;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.carousel ul.indicators li {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.carousel .direction {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+
+.carousel .direction.left {
+  left: 0;
+  z-index: 2;
+}
+
+.carousel .direction.right {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.transition {
+  transition: left 0.4s ease-in-out;
+}
+
+.grab {
+  cursor: grab;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.pointer {
+  cursor: pointer;
+}
